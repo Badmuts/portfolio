@@ -6,6 +6,26 @@ body {
   z-index: 5;
   background-color: #303947; }
 
+.pull-right {
+  float: right !important; }
+
+.hide {
+  display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 2px solid #33af96;
+  display: inline-block; }
+
+a, a:hover {
+  transition: color 0.2s ease; }
+
+img {
+  border: none; }
+
 .light {
   font-weight: 300; }
 
@@ -24,13 +44,22 @@ body {
     font-weight: 400;
     letter-spacing: -0.7pt;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    color: white; }
+    color: white;
+    border-bottom: none; }
+
+.fixed {
+  padding-top: 65px; }
+  .fixed nav {
+    position: fixed;
+    top: 0;
+    z-index: 10; }
 
 nav {
   background-color: #27303d;
-  min-height: 65px;
+  max-height: 65px;
   line-height: 32px;
-  color: white; }
+  color: white;
+  width: 100%; }
   nav .logo {
     width: auto;
     float: left;
@@ -67,3 +96,95 @@ nav {
   margin-top: 20px; }
   .item img {
     width: 100%; }
+
+.contact {
+  background-color: #475361;
+  margin-top: 40px; }
+  .contact p {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Source Sans Pro", sans-serif; }
+  .contact form {
+    margin-top: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300; }
+    .contact form label {
+      display: block;
+      color: rgba(255, 255, 255, 0.4); }
+    .contact form input, .contact form textarea {
+      display: block;
+      background-color: #303947;
+      border: none;
+      padding: 10px 15px;
+      font-family: "Source Sans Pro", sans-serif;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.4); }
+    .contact form ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .contact form ul li {
+        margin-bottom: 20px; }
+    .contact form .error {
+      background-color: #e26e57; }
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .social li {
+    display: inline-block;
+    margin-right: 10px; }
+    .social li a {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 18pt; }
+      .social li a:hover {
+        text-decoration: none; }
+        .social li a:hover i {
+          transition: color 0.2s ease; }
+        .social li a:hover .icon-twitter {
+          color: #5eaade;
+          transition: color 0.2s ease; }
+        .social li a:hover .icon-dribbble {
+          color: #ea4c89;
+          transition: color 0.2s ease; }
+        .social li a:hover .icon-github {
+          color: black;
+          transition: color 0.2s ease; }
+        .social li a:hover .icon-soundcloud {
+          color: #ff4800;
+          transition: color 0.2s ease; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-twitter:before {
+  content: "\e600"; }
+
+.icon-dribbble:before {
+  content: "\e601"; }
+
+.icon-github:before {
+  content: "\e602"; }
+
+.icon-soundcloud:before {
+  content: "\e603"; }
