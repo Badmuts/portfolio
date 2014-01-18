@@ -32,8 +32,7 @@ img {
 .header {
   padding: 6% 0;
   text-align: center;
-  background: url(../img/header_bg.jpg) no-repeat;
-  background-size: 100%;
+  background: url(../img/header_bg_pattern.png);
   box-shadow: 3px 0 0 black;
   position: relative;
   z-index: 1; }

@@ -23,10 +23,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Webdesigner - Daan Rosbergen</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate-custom.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="header" id="header">
