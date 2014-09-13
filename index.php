@@ -22,6 +22,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="I am a young webdesigner from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie">
+	<meta name="keywords" content="webdesigner, daan, rosbergen, daan rosbergen, nederland, boskoop, dribbble, github, twitter, digitalefactuur, digitale factuur, studio projectie, leiden, webdeveloper, frontend developer, front end developer, frontenddeveloper">
+	<meta name="author" content="Daan Rosbergen">
 	<title>Webdesigner - Daan Rosbergen</title>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/grid.css">
@@ -30,7 +33,7 @@
 </head>
 <body>
 	<div class="header" id="header">
-		<h1>
+		<h1 class="animated fadeInUp">
 			<span class="light">I am a</span> 
 			<span class="webdesigner">webdesigner</span>
 		</h1>
@@ -171,6 +174,16 @@
 					e.preventDefault();
 				}
 			});
+
+			// $(".webdesigner").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+			// 	var $self = $(this);
+			// 	setTimeout(function() {
+			// 		var clone = $($self).clone(true, true);
+			// 		$self.addClass("hide");
+			// 		clone.text("webdeveloper");
+			// 		clone = $self.after(clone);
+			// 	}, 1500);
+			// });
 		})();
 	</script>
 </body>

@@ -30,9 +30,12 @@ img {
   font-weight: 300; }
 
 .header {
-  padding: 6% 0;
+  min-height: 100%;
+  padding: 21% 0;
   text-align: center;
-  background: url(../img/header_bg_pattern.png);
+  background-image: url(../img/hero-04.jpg);
+  background-size: 100%;
+  background-position: center center;
   box-shadow: 3px 0 0 black;
   position: relative;
   z-index: 1; }
@@ -163,7 +166,6 @@ nav {
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
