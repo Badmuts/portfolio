@@ -27,7 +27,7 @@
 	<meta name="author" content="Daan Rosbergen">
 	<meta name="theme-color" content="#27303d">
 	<title>Webdesigner - Daan Rosbergen</title>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate-custom.css">
@@ -124,7 +124,7 @@
 					?>
 					<ul class="social">
 						<li><a target="_blank" href="https://twitter.com/daanrosbergen"><i class="icon-twitter"></i></a></li>
-						<li><a target="_blank" href="http://dribbble.com/daanrosbergen"><i class="icon-dribbble"></i></a></li>
+						<li><a target="_blank" href="https://dribbble.com/daanrosbergen"><i class="icon-dribbble"></i></a></li>
 						<li><a target="_blank" href="https://github.com/Badmuts"><i class="icon-github"></i></a></li>
 						<li><a target="_blank" href="https://soundcloud.com/kickekees"><i class="icon-soundcloud"></i></a></li>
 					</ul>
