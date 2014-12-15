@@ -4,11 +4,11 @@
 		extract($_POST);
 		if (!empty($name) || !empty($email) || !empty($message))
 		{
-			$headers =  "From: $email" . "\r\n" .
-						"Reply-To: $email" . "\r\n" .
+			$headers =  "From: $email \r\n" .
+						"Reply-To: $email \r\n" .
 						"X-Mailer: PHP/" . phpversion();
-			$text = "Naam: $name" . "\r\n" .
-					"Email: $email" . "\r\n" .
+			$text = "Naam: $name \r\n" .
+					"Email: $email \r\n" .
 					"Message: $message";
 			if ( mail('d.rosbergen@gmail.com', 'Portfolio Contact form', $text, $headers) ) {
 				$success = true;
@@ -22,9 +22,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="I am a young webdesigner from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie">
+	<meta name="description" content="I am a young webdesigner and developer from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie">
 	<meta name="keywords" content="webdesigner, daan, rosbergen, daan rosbergen, nederland, boskoop, dribbble, github, twitter, digitalefactuur, digitale factuur, studio projectie, leiden, webdeveloper, frontend developer, front end developer, frontenddeveloper">
 	<meta name="author" content="Daan Rosbergen">
+	<meta name="theme-color" content="#27303d">
 	<title>Webdesigner - Daan Rosbergen</title>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/grid.css">
