@@ -1,0 +1,91 @@
+.contact {
+	background-color: #475361;
+	margin-top: 40px;
+
+	p {
+		color: rgba(255, 255, 255, 0.8);
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	form {
+		margin-top: 20px;
+		font-family: 'Source Sans Pro', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+
+		label {
+			display: block;
+			color: rgba(255, 255, 255, 0.4);
+		}
+
+		input, textarea {
+			display: block;
+			background-color: #303947;
+			border: none;
+			padding: 10px 15px;
+			font-family: 'Source Sans Pro', sans-serif;
+			width: 100%;
+			color: rgba(255, 255, 255, 0.4);
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin-bottom: 20px;
+			}
+
+		.error {
+			background-color: #e26e57;
+		}
+	}
+}
+
+.social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	li {
+		display: inline-block;
+		margin-right: 10px;
+		
+		a {
+			color: rgba(255, 255, 255, 0.6);
+			font-size: 18pt;
+			
+			&:hover {
+				text-decoration: none;
+
+				i {
+					transition: color 0.2s ease;
+				}
+
+				.icon-twitter {
+					color: #5eaade;
+					transition: color 0.2s ease;
+				}
+
+				.icon-dribbble {
+					color: #ea4c89;
+					transition: color 0.2s ease;
+				}
+
+				.icon-github {
+					color: #000;
+					transition: color 0.2s ease;
+				}
+
+				.icon-soundcloud {
+					color: rgb(255,72,0);
+					transition: color 0.2s ease;
+				}
+			}
+		}
+	}
+}

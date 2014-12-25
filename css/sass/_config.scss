@@ -1,0 +1,40 @@
+body {
+	background-color: #303947;
+}
+
+.page {
+	position: relative;
+	z-index: 5;
+	background-color: #303947;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.hide {
+	display: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 300;
+	text-transform: uppercase;
+	border-bottom: 2px solid #33af96;
+	display: inline-block;
+}
+
+a, 
+a:hover {
+	transition: color 0.2s ease;
+}
+
+img {
+	border: none;
+}
