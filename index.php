@@ -35,7 +35,7 @@
 <body>
 	<div class="header" id="header">
 		<h1 class="animated fadeInUp">
-			<span class="light">I am a</span> 
+			<span class="light">I am a</span>
 			<span class="webdesigner">webdesigner</span>
 		</h1>
 	</div>
@@ -98,10 +98,10 @@
 					<?php
 						if ( isset($success) && $success === true) {
 							echo "<p>Thanks for your message! I will reply as soon as possible.</p>";
-						} elseif ( isset($success) && $success === false) { 
+						} elseif ( isset($success) && $success === false) {
 							echo "<p>Oh no! Something went wrong, try to submit the form again or send a message to d.rosbergen@gmail.com</p>";
 						} else {
-							echo '<form action="" method="POST"> 
+							echo '<form action="" method="POST">
 						<ul>
 							<li>
 								<label for="name">Name</label>
@@ -142,7 +142,7 @@
 
 		ga('create', 'UA-21477737-1', 'auto');
 		ga('send', 'pageview');
-  
+
 		(function () {
 			var navTop = $('nav').offset().top;
 
@@ -184,16 +184,6 @@
 					e.preventDefault();
 				}
 			});
-
-			// $(".webdesigner").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
-			// 	var $self = $(this);
-			// 	setTimeout(function() {
-			// 		var clone = $($self).clone(true, true);
-			// 		$self.addClass("hide");
-			// 		clone.text("webdeveloper");
-			// 		clone = $self.after(clone);
-			// 	}, 1500);
-			// });
 		})();
 	</script>
 </body>
