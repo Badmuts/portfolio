@@ -49,10 +49,17 @@ nav {
 				font-size: 11pt;
 				color: #fff;
 
-				&:hover {
+				&:hover,
+                &:focus {
 					text-decoration: none;
 					color: rgba(255, 255, 255, 0.6);
 				}
+
+                &:visited,
+                &:active {
+                    text-decoration: none;
+                    color: #fff;
+                }
 			}
 		}
 	}
