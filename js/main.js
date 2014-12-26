@@ -28,26 +28,6 @@ $(function() {
         $('html,body').animate({scrollTop: $(id).offset().top},'slow');
     });
 
-    // CONTACT FORM
-    $('form').on('submit', function (e) {
-        var name = $('input[name=name]');
-        var email = $('input[name=email]');
-        var message = $('textarea');
-
-        $('input[name=name], input[name=email], textarea').removeClass('error');
-
-        if ( !name.val() ) {
-            name.addClass('error');
-            e.preventDefault();
-        } else if ( !email.val() ) {
-            email.addClass('error');
-            e.preventDefault();
-        } else if ( !message.val() ) {
-            message.addClass('error');
-            e.preventDefault();
-        }
-    });
-
    //set animation timing
     var animationDelay = 2500,
         lettersDelay = 50;
@@ -131,4 +111,45 @@ $(function() {
         $oldWord.removeClass('is-visible').addClass('is-hidden');
         $newWord.removeClass('is-hidden').addClass('is-visible');
     }
+
+    /**
+     * Contact form
+     */
+     $("form").on("submit", function(e) {
+        // <p>Oh no! Something went wrong, try to submit the form again or send a message to d.rosbergen@gmail.com</p>
+        // <p>Thanks for your message! I will reply as soon as possible.</p>
+        var name = $('input[name=name]');
+        var email = $('input[name=email]');
+        var message = $('textarea');
+        var formData = $(this).serialize();
+
+        e.preventDefault();
+        $('input[name=name], input[name=email], textarea').removeClass('error');
+
+        if ( !name.val() ) {
+            name.addClass('error');
+            return false;
+        } else if ( !email.val() ) {
+            email.addClass('error');
+            return false;
+        } else if ( !message.val() ) {
+            message.addClass('error');
+            return false;
+        }
+
+
+        $.ajax({
+            url: "contact.php",
+            type: "POST",
+            data: formData,
+            success: function( data ) {
+                if ( data === '1' ){
+                    $("form input[type=submit]").val("Thanks for your message!").addClass("success");
+                } else {
+                    $("form input[type=submit]").val("Oh no! Something went wrong. Try again?").addClass("error");
+                }
+            }
+        });
+     });
+
 });

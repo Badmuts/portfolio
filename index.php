@@ -1,23 +1,3 @@
-<?php
-	if ( isset( $_POST ) )
-	{
-		extract($_POST);
-		if (!empty($name) || !empty($email) || !empty($message))
-		{
-			$headers =  "From: $email \r\n" .
-						"Reply-To: $email \r\n" .
-						"X-Mailer: PHP/" . phpversion();
-			$text = "Naam: $name \r\n" .
-					"Email: $email \r\n" .
-					"Message: $message";
-			if ( mail('d.rosbergen@gmail.com', 'Portfolio Contact form', $text, $headers) ) {
-				$success = true;
-			} else {
-				$success = false;
-			}
-		}
-	}
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -99,33 +79,25 @@
 			<div class="container">
 				<div class="col-lg-offset-3 col-lg-5">
 					<h1>Contact</h1>
-					<?php
-						if ( isset($success) && $success === true) {
-							echo "<p>Thanks for your message! I will reply as soon as possible.</p>";
-						} elseif ( isset($success) && $success === false) {
-							echo "<p>Oh no! Something went wrong, try to submit the form again or send a message to d.rosbergen@gmail.com</p>";
-						} else {
-							echo '<form action="" method="POST">
-						<ul>
-							<li>
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name">
-							</li>
-							<li>
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email">
-							</li>
-							<li>
-								<label for="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10"></textarea>
-							</li>
-							<li>
-								<input type="submit" name="submit" value="Submit">
-							</li>
-						</ul>
-					</form>';
-						}
-					?>
+                    <form action="" method="POST">
+                        <ul>
+                            <li>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </li>
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" name="submit" value="Submit">
+                            </li>
+                        </ul>
+                    </form>
 					<ul class="social">
 						<li><a target="_blank" href="https://twitter.com/daanrosbergen"><i class="icon-twitter"></i></a></li>
 						<li><a target="_blank" href="https://dribbble.com/daanrosbergen"><i class="icon-dribbble"></i></a></li>

@@ -19,7 +19,8 @@
 			color: rgba(255, 255, 255, 0.4);
 		}
 
-		input, textarea {
+		input,
+        textarea {
 			display: block;
 			background-color: #303947;
 			border: none;
@@ -27,6 +28,9 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			width: 100%;
 			color: rgba(255, 255, 255, 0.4);
+            -webkit-appearance:none;
+            outline: none;
+            @include transition(all 150ms ease-in);
 		}
 
 		ul {
@@ -39,9 +43,14 @@
 			}
 		}
 
-		.error {
-			background-color: #e26e57;
-		}
+        .error {
+            background-color: #e26e57;
+            @include transition(all 150ms ease-in);
+        }
+		.success {
+            background-color: #33af96;
+            @include transition(all 150ms ease-in);
+        }
 	}
 }
 
@@ -55,11 +64,11 @@
 	li {
 		display: inline-block;
 		margin-right: 10px;
-		
+
 		a {
 			color: rgba(255, 255, 255, 0.6);
 			font-size: 18pt;
-			
+
 			&:hover {
 				text-decoration: none;
 
