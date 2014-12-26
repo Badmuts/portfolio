@@ -34,9 +34,13 @@
 </head>
 <body>
 	<div class="header" id="header">
-		<h1 class="animated fadeInUp">
+		<h1 class="animated fadeInUp letters rotate-2">
 			<span class="light">I am a</span>
-			<span class="webdesigner">webdesigner</span>
+			<span class="word-wrapper">
+                <b class="is-visible">webdesigner</b>
+                <b>webdeveloper</b>
+                <b>front-end lover</b>
+            </span>
 		</h1>
 	</div>
 	<div class="page">

@@ -1,0 +1,33 @@
+@include keyframes(rotate-in) {
+    0% {
+        opacity: 0;
+        @include transform(translateZ(-20px) rotateX(90deg));
+    }
+
+    60% {
+        opacity: 1;
+        @include transform(translateZ(-20px) rotateX(-10deg));
+    }
+
+    100% {
+        opacity: 1;
+        @include transform(translateZ(-20px) rotateX(0deg));
+    }
+}
+
+@include keyframes(rotate-out) {
+    0% {
+        opacity: 1;
+        @include transform(translateZ(-20px) rotateX(0));
+    }
+
+    60% {
+        opacity: 0;
+        @include transform(translateZ(-20px) rotateX(-100deg));
+    }
+
+    100% {
+        opacity: 0;
+        @include transform(translateZ(-20px) rotateX(-90deg));
+    }
+}
