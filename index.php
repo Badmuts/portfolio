@@ -19,7 +19,6 @@
 			<span class="word-wrapper">
                 <b class="is-visible">webdesigner</b>
                 <b>webdeveloper</b>
-                <b>front-end lover</b>
             </span>
 		</h1>
 	</div>
