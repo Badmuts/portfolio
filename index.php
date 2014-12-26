@@ -16,10 +16,10 @@
 	<div class="header" id="header">
 		<h1 class="animated fadeInUp letters rotate-2">
 			<span class="light">I am a</span>
-			<span class="word-wrapper">
-                <b class="is-visible">webdesigner</b>
-                <b>webdeveloper</b>
-            </span>
+                    <span class="word-wrapper">
+                        <b class="is-visible">webdesigner</b>
+                        <b>webdeveloper</b>
+                    </span>
 		</h1>
 	</div>
 	<div class="page">
