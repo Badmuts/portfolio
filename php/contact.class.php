@@ -22,12 +22,12 @@ class Contact {
     }
 
     function send() {
-        $headers =  "From: $email \r\n" .
-        "Reply-To: $email \r\n" .
+        $headers =  "From: {$this->data['email']} \r\n" .
+        "Reply-To: {$this->data['email']} \r\n" .
         "X-Mailer: PHP/" . phpversion();
-        $text = "Naam: $this->data['name'] \r\n" .
-        "Email: $this->data['email'] \r\n" .
-        "Message: $this->data['message'] ";
+        $text = "Naam: {$this->data['name']} \r\n" .
+        "Email: {$this->data['email']} \r\n" .
+        "Message: {$this->data['message']} ";
 
         if ( mail('d.rosbergen@gmail.com', 'Portfolio Contact form', $text, $headers) ) {
             echo $this->success();
