@@ -1,0 +1,45 @@
+.btn {
+    display: block;
+    border-radius: 0.25em;
+    padding: .7em 1.3em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.btn-default {
+    background-color: #33af96;
+    color: #fff;
+    @include transition(background-color 250ms);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: lighten(#33af96, 5%);
+        color: #fff;
+        text-decoration: none;
+        @include transition(background-color 250ms);
+    }
+}
+
+.btn-link {
+    color: lighten(#33af96, 5%);
+    @include transition(color 250ms);
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: darken(#33af96, 5%);
+        @include transition(color 250ms);
+    }
+}
+
+ul.buttons {
+    margin: 2em 0 0 0;
+    padding: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+}
