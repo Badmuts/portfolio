@@ -1,8 +1,10 @@
-.work {margin-top: 20px;}
+.work {
+    margin-top: 20px;
+    @include animation(fadeInUp 1s);
+}
 
 .item {
     margin-top: 20px;
-    @include animation(fadeInUp 750ms);
 
     img {
         width: 100%;

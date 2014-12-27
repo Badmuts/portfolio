@@ -8,13 +8,13 @@
     <meta name="theme-color" content="#27303d">
     <title>Webdesigner - Daan Rosbergen</title>
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate-custom.css">
 </head>
-<body>
+<body class="">
     <div class="header" id="header">
-        <h1 class="animated fadeInUp letters rotate-2">
+        <h1 class="letters rotate-2">
             <span class="light">I am a</span>
             <span class="word-wrapper">
                 <b class="is-visible">webdesigner</b>
@@ -38,13 +38,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-6 item">
-                        <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">
+                        <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/digitalefactuur-app.jpg" alt="DigitaleFactuur App">
+                        <img src="img/digitalefactuur-app.jpg" alt="DigitaleFactuur App" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/digitalefactuur-prijzen-aanmelden.jpg" alt="DigitaleFactuur Dashboard">
+                        <img src="img/digitalefactuur-prijzen-aanmelden.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
                     </div>
                 </div>
                 <div class="row">
@@ -52,24 +52,24 @@
                         <span></span>
                     </div>
                     <div class="col-lg-6 item pull-right">
-                        <img src="img/digitalefactuur-dashboard.jpg" alt="DigitaleFactuur Dashboard">
+                        <img src="img/digitalefactuur-dashboard.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
                     </div>
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/digitalefactuur-offerte.jpg" alt="DigitaleFactuur offerte pagina">
+                        <img src="img/digitalefactuur-offerte.jpg" alt="DigitaleFactuur offerte pagina" data-toggle="modal">
                     </div>
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/digitalefactuur-projecten.jpg" alt="DigitaleFactuur iPhone en Android App">
+                        <img src="img/digitalefactuur-projecten.jpg" alt="DigitaleFactuur iPhone en Android App" data-toggle="modal">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/kluskar-groen.jpg" alt="Aannemersbedrijf Kluskargroen">
+                        <img src="img/kluskar-groen.jpg" alt="Aannemersbedrijf Kluskargroen" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/derbiteamzuidholland.jpg" alt="Blog Derbi Team Zuid Holland">
+                        <img src="img/derbiteamzuidholland.jpg" alt="Blog Derbi Team Zuid Holland" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/dehaarwinkel.jpg" alt="Schoolproject: De Haarwinkel">
+                        <img src="img/dehaarwinkel.jpg" alt="Schoolproject: De Haarwinkel" data-toggle="modal">
                     </div>
                 </div>
             </div>
@@ -107,7 +107,22 @@
             </div>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <div class="modal">
+        <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">
+        <div class="content">
+            <div class="close">&times;</div>
+            <h1>Education is for gays!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita culpa ipsum eveniet nobis. Hic iure quisquam consectetur optio saepe accusantium sint explicabo necessitatibus, iste quo unde dolorem facilis, repellat.</p>
+            <ul class="buttons">
+                <li><a href="#" class="btn btn-default">Bekijk website</a></li>
+                <li><a href="#" class="btn btn-link">Gek linkje</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
