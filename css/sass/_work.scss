@@ -1,8 +1,18 @@
-.work {
-	margin-top: 20px;
-}
+.work {margin-top: 20px;}
 
 .item {
-	margin-top: 20px;
-	img {width: 100%;}
+    margin-top: 20px;
+    @include animation(fadeInUp 750ms);
+
+    img {
+        width: 100%;
+        cursor: pointer;
+        box-shadow: 0 0 0 darken(#27303D, 5%);
+        @include transition(box-shadow 350ms ease-in);
+
+        &:hover {
+            box-shadow: 0 0 40px darken(#27303D, 5%);
+            @include transition(box-shadow 350ms ease-in);
+        }
+    }
 }

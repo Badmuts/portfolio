@@ -31,3 +31,17 @@
         @include transform(translateZ(-20px) rotateX(-90deg));
     }
 }
+
+@include keyframes(shadowIn) {
+    0% {
+        box-shadow: 0 0 0 darken(#27303D, 5%);
+    }
+
+    50% {
+        box-shadow: 0 0 20px darken(#27303D, 5%);
+    }
+
+    100% {
+        box-shadow: 0 0 40px darken(#27303D, 5%);
+    }
+}
