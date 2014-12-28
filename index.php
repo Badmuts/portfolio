@@ -112,7 +112,7 @@
         <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">
         <div class="content">
             <div class="close">&times;</div>
-            <h1>Education is for gays!</h1>
+            <h1>Traffic is for gays!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita culpa ipsum eveniet nobis. Hic iure quisquam consectetur optio saepe accusantium sint explicabo necessitatibus, iste quo unde dolorem facilis, repellat.</p>
             <ul class="buttons">
                 <li><a href="#" class="btn btn-default">Bekijk website</a></li>
