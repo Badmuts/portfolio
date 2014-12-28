@@ -1,39 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="I am a young webdesigner and developer from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie">
-    <meta name="keywords" content="webdesigner, daan, rosbergen, daan rosbergen, nederland, boskoop, dribbble, github, twitter, digitalefactuur, digitale factuur, studio projectie, leiden, webdeveloper, frontend developer, front end developer, frontenddeveloper">
-    <meta name="author" content="Daan Rosbergen">
-    <meta name="theme-color" content="#27303d">
-    <title>Webdesigner - Daan Rosbergen</title>
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="">
-    <div class="header" id="header">
-        <h1 class="letters rotate-2">
-            <span class="light">I am a</span>
-            <span class="word-wrapper">
-                <b class="is-visible">webdesigner</b>
-                <b>webdeveloper</b>
-            </span>
-        </h1>
-    </div>
-    <div class="page">
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    Daan <span class="light">Rosbergen</span>
-                </div>
-                <ul>
-                    <li class="active"><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<?= snippet('header') ?>
+    <main class="page">
+        <?= snippet('menu') ?>
         <div id="work" class="work">
             <div class="container">
                 <div class="row">
@@ -97,16 +64,19 @@
                             </li>
                         </ul>
                     </form>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://twitter.com/daanrosbergen"><i class="icon-twitter"></i></a></li>
-                        <li><a target="_blank" href="https://dribbble.com/daanrosbergen"><i class="icon-dribbble"></i></a></li>
-                        <li><a target="_blank" href="https://github.com/Badmuts"><i class="icon-github"></i></a></li>
-                        <li><a target="_blank" href="https://soundcloud.com/kickekees"><i class="icon-soundcloud"></i></a></li>
-                    </ul>
+                    <footer>
+                        <ul class="social text-center">
+                            <li><a target="_blank" href="<?= $site->twitter() ?>"><i class="icon-twitter"></i></a></li>
+                            <li><a target="_blank" href="<?= $site->dribbble() ?>"><i class="icon-dribbble"></i></a></li>
+                            <li><a target="_blank" href="<?= $site->github() ?>"><i class="icon-github"></i></a></li>
+                            <li><a target="_blank" href="<?= $site->soundcloud() ?>"><i class="icon-soundcloud"></i></a></li>
+                        </ul>
+                        <?= kirbytext($site->copyright()) ?>
+                    </footer>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <div class="modal">
         <img src="assets/images/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">

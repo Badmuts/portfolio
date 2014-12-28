@@ -17,3 +17,6 @@ fields:
   tags:
     label: Tags
     type:  tags
+  url:
+    label: URL
+    type: url

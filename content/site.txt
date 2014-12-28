@@ -6,7 +6,7 @@ Author: Daan Rosbergen
 
 ----
 
-Description: I am a young webdesigner and developer from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie
+Description: I am a young webdesigner and developer from the Netherlands. Currently I am working for DigitaleFactuur
 
 ----
 

@@ -6,5 +6,7 @@ password: >
   $2a$10$Z4BxoOBUuqjBQt9ZIZPX.uMZ/fQK/KglonnPrdj9evMOE1mTIlL1y
 language: en
 role: admin
-token: f6b02c6cc252ca93ef77ee2ccf84f4f10dae3cc3
-history: [ ]
+token: 180687c3faccf13bcf74ecee0a0cfd98a5aac66e
+history:
+  - null
+  - home
