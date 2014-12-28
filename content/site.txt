@@ -1,0 +1,17 @@
+Title: Daan Rosbergen
+
+----
+
+Author: Daan Rosbergen
+
+----
+
+Description: I am a young webdesigner and developer from the Netherlands. Currently I am working for DigitaleFactuur and Studio Projectie
+
+----
+
+Keywords: webdesigner,daan,rosbergen,daan rosbergen,nederland,boskoop,dribbble,github,twitter,digitalefactuur,digitale factuur,studio projectie,leiden,webdeveloper,frontend developer,front end developer,frontenddeveloper
+
+----
+
+Copyright: © 2013-(date: Year) (link: https://daanrosbergen.nl text: Daan Rosbergen)
