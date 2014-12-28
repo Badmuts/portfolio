@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#27303d">
     <title>Webdesigner - Daan Rosbergen</title>
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="">
     <div class="header" id="header">
@@ -38,13 +38,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-6 item">
-                        <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/digitalefactuur-app.jpg" alt="DigitaleFactuur App" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-app.jpg" alt="DigitaleFactuur App" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/digitalefactuur-prijzen-aanmelden.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-prijzen-aanmelden.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
                     </div>
                 </div>
                 <div class="row">
@@ -52,24 +52,24 @@
                         <span></span>
                     </div>
                     <div class="col-lg-6 item pull-right">
-                        <img src="img/digitalefactuur-dashboard.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-dashboard.jpg" alt="DigitaleFactuur Dashboard" data-toggle="modal">
                     </div>
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/digitalefactuur-offerte.jpg" alt="DigitaleFactuur offerte pagina" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-offerte.jpg" alt="DigitaleFactuur offerte pagina" data-toggle="modal">
                     </div>
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/digitalefactuur-projecten.jpg" alt="DigitaleFactuur iPhone en Android App" data-toggle="modal">
+                        <img src="assets/images/digitalefactuur-projecten.jpg" alt="DigitaleFactuur iPhone en Android App" data-toggle="modal">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-3 item">
-                        <img src="img/kluskar-groen.jpg" alt="Aannemersbedrijf Kluskargroen" data-toggle="modal">
+                        <img src="assets/images/kluskar-groen.jpg" alt="Aannemersbedrijf Kluskargroen" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/derbiteamzuidholland.jpg" alt="Blog Derbi Team Zuid Holland" data-toggle="modal">
+                        <img src="assets/images/derbiteamzuidholland.jpg" alt="Blog Derbi Team Zuid Holland" data-toggle="modal">
                     </div>
                     <div class="col-lg-3 item">
-                        <img src="img/dehaarwinkel.jpg" alt="Schoolproject: De Haarwinkel" data-toggle="modal">
+                        <img src="assets/images/dehaarwinkel.jpg" alt="Schoolproject: De Haarwinkel" data-toggle="modal">
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
     </div>
 
     <div class="modal">
-        <img src="img/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">
+        <img src="assets/images/digitalefactuur-homepage.jpg" alt="DigitaleFactuur homepage">
         <div class="content">
             <div class="close">&times;</div>
             <h1>Traffic is for gays!</h1>
@@ -122,7 +122,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="bower_components/velocity/velocity.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/components/velocity/velocity.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

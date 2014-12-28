@@ -8,7 +8,8 @@
     color: #27303d;
     box-shadow: 0 0 46px darken(#27303d, 3%);
 
-    &.animate-width {background-color: #fff;}
+    &.animate-width  {background-color: #fff;}
+    p                   {color: transparentize(#27303d, 0.32);}
 
     h1 {
         color: #27303d;
@@ -18,12 +19,6 @@
         text-transform: none;
 
     }
-
-    p {
-        color: transparentize(#27303d, 0.32);
-    }
-
-
 
     img {
         float: left;
@@ -44,6 +39,7 @@
             position: relative;
             visibility: visible;
             opacity: 1;
+
             h1         {@include animation(fadeInLeft 400ms);}
             p          {@include animation(fadeInLeft 500ms);}
             .buttons   {@include animation(fadeInLeft 600ms);}
