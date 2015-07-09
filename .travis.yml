@@ -7,3 +7,4 @@ before_script:
 before_install:
   - npm install -g bower
   - bower install
+sudo: false
