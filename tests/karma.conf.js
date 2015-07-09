@@ -1,5 +1,5 @@
 module.exports = function(config) {
-  config.set({
+  var configuration = {
     basePath: '../',
     frameworks: ['jasmine'],
     reporters: ['progress', 'junit'],
@@ -31,6 +31,11 @@ module.exports = function(config) {
         'assets/components/velocity/velocity.js',
         'tests/**/*.js'
     ]
+  };
 
-  });
+  if (process.env.CIRCLE_TEST_REPORTS) {
+    configuration.junitReporter.outputDir = process.env.CIRCLE_TEST_REPORTS + '/karma';
+  }
+
+  config.set(configuration);
 };
