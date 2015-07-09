@@ -23,5 +23,5 @@ gulp.task('test', function (done) {
 
 gulp.task('watch', function () {
 	gulp.watch("./assets/css/sass/*.scss", ['sass']);
-    gulp.watch("./assets/js/*.js", ['test']);
+    gulp.watch(["./assets/js/*.js", "./tests/specs/*.js"], ['test']);
 });
