@@ -16,7 +16,7 @@ module.exports = function(config) {
     autoWatch: true,
 
     // start these browsers
-    browsers: ['Chrome', 'Safari', 'Firefox'],
+    browsers: ['Chrome', 'Firefox'],
 
     // Continuous Integration mode
     singleRun: false,
