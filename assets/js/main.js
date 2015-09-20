@@ -7,26 +7,9 @@
 // ga('send', 'pageview');
 
 $(function() {
-    var navTop = $('nav').offset().top;
 
-    $(window).scroll( function()
-    {
-        var scroll = $(window).scrollTop(), slowScroll = scroll/2;
-        $('#header').css({ transform: "translateY(" + slowScroll + "px)" });
-
-        if (scroll >= navTop) {
-            $('body').addClass('fixed');
-        } else {
-            $('body').removeClass('fixed');
-        }
-    });
-
-    $('nav a').on('click', function (e) {
-        e.preventDefault();
-        var id = $(this).attr('href');
-        console.log(id);
-        $('html,body').animate({scrollTop: $(id).offset().top},'slow');
-    });
+    navbar.init();
+    header.init();
 
    //set animation timing
     var animationDelay = 2500,

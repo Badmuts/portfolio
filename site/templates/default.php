@@ -93,6 +93,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/components/velocity/velocity.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

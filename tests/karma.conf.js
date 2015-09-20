@@ -1,8 +1,8 @@
 module.exports = function(config) {
   var configuration = {
     basePath: '../',
-    frameworks: ['jasmine'],
-    reporters: ['progress', 'junit'],
+    frameworks: ['jasmine-jquery', 'jasmine'],
+    reporters: ['progress', 'junit', 'osx'],
     // web server port
     port: 9876,
 
@@ -26,9 +26,17 @@ module.exports = function(config) {
       suite: ''
     },
 
+    osxReporter: {
+        notificationMode: 'always',
+        host: "localhost",
+        port: 1337
+    },
+
     files: [
         'assets/components/jquery/dist/jquery.js',
         'assets/components/velocity/velocity.js',
+        'assets/js/navbar.js',
+        'assets/js/header.js',
         'tests/**/*.js'
     ]
   };
