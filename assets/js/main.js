@@ -8,8 +8,8 @@
 
 $(function() {
 
-    navbar.init();
-    header.init();
+    // var navbar = new Navbar();
+    var header = new Header();
 
    //set animation timing
     var animationDelay = 2500,
